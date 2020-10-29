@@ -22,21 +22,19 @@ func (c *Classic) PieceAt(at coord.ChessCoordinates) piece.Piece {
 	if x>8 || y>8 {
 		return nil
 	}
-	if c[x][y] != nil {
-		return c[x][y]
-	}
-	return nil
+	piece := c[x][y]
+	return piece
 }
 
 // MovePiece moves a piece from given coordinates to
 // given coordinates.
 // Returns an error if destination was occupied.
 func (c *Classic) MovePiece(from coord.ChessCoordinates, to coord.ChessCoordinates) error {
-	if c.PieceAt(from) == nil{
-		return fmt.Errorf("No pieces to move")
-	}
 	if c.PieceAt(to) != nil{
 		return fmt.Errorf("occupied")
+	}
+	if c.PieceAt(from) == nil{
+		return fmt.Errorf("No pieces to move" )
 	}
 	x,_ := from.Coord(0)
 	y,_ := from.Coord(1)
