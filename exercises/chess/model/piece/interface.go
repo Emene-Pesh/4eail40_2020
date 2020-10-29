@@ -4,8 +4,8 @@ package piece
 import (
 	"fmt"
 
-	"github.com/jglouis/4eail40_2020/exercises/chess/model/coord"
-	"github.com/jglouis/4eail40_2020/exercises/chess/model/player"
+	"github.com/Emene-Pesh/4eail40_2020/exercises/chess/model/coord"
+	"github.com/Emene-Pesh/4eail40_2020/exercises/chess/model/player"
 )
 
 // Piece represents a game piece

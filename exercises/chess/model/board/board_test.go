@@ -3,7 +3,7 @@ package board
 import (
 	"testing"
 
-	"github.com/jglouis/4eail40_2020/exercises/chess/model/coord"
+	"github.com/Emene-Pesh/4eail40_2020/exercises/chess/model/coord"
 )
 
 type mockCoord int
