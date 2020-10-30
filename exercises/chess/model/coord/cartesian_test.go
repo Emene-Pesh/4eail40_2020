@@ -34,7 +34,7 @@ func TestCartesian_Coord(t *testing.T) {
 	// test for err
 	t.Run("err", func(t *testing.T) {
 		_, err := c.Coord(2)
-		if err != nil {
+		if err == nil {
 			t.Errorf("expected and error for n == 2")
 		}
 	})
